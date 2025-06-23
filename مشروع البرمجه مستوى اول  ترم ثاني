@@ -1,0 +1,230 @@
+ cout<<endl;
+ cout<<"\n\nPrece(1) To Executed Again OR Prece (2) TO back main menu OR Prece Any Key To Exit The Program "<<endl;
+ cin>> x;
+ if(x== 1)
+  goto Question15;
+ else if (x==2)
+    goto menu;
+ else
+    return 0;
+   }
+   break;
+
+
+    case 16:
+ Question16:
+   {
+system("cls");
+cout<<"\t( 16 ) a program that receives values and then arranges them descending order \n\n";
+int Y[7] ;
+   cout<<"please enter 7 numbers\n";
+   for(int i= 0; i<7;i++){
+    cin>> Y[i];
+   }
+
+      for(int i= 0;i<7;i++){
+           for(int j=0;j<6;j++){
+if(Y[j]<Y[j+1]){
+
+int tamp=Y[j+1];
+Y[j+1]=Y[j];
+Y[j]=tamp;
+
+      }
+      }
+      }
+ cout<<"the numbers after sort ";
+    for(int i= 0; i<7;i++)
+cout<<Y[i]<<"\t";
+
+
+ cout<<endl;
+ cout<<"\n\nPrece(1) To Executed Again OR Prece (2) TO back main menu OR Prece Any Key To Exit The Program "<<endl;
+ cin>>x;
+ if(x== 1)
+  goto Question16;
+ else if (x==2)
+    goto menu;
+ else
+    return 0;
+   }
+   break;
+
+
+
+       case 17:
+ Question17:
+   {
+system("cls");
+cout<<"\t( 17 ) ascending sort program \n\n";
+cout<<"please enter 5 numbers\n";
+   int a[5];
+    int b[5];
+    int c[10];
+    int d;
+
+    for(int i=0 ;i<5 ;i++){
+        cin>>a[i];
+    }
+    for(int y=0; y<5;y++){
+        cin>>b[y];
+    }
+    for(int d=0;d<5 ;d++){
+    c[d]=a[d]+b[d];
+    }
+    for(int i=0;i<5;i++)
+    for(int g=0 ;g<4 ;g++){
+    if(c[g]>c[g+1]){
+    int w=c[g+1];
+    c[g+1]=c[g];
+    c[g]=w;
+    }
+    }
+    cout<<"the numbers after sort ";
+    for(int i=0;i<5;i++)
+        cout<<c[i]<<" ";
+
+
+ cout<<endl;
+ cout<<"\n\nPrece(1) To Executed Again OR Prece (2) TO back main menu OR Prece Any Key To Exit The Program "<<endl;
+ cin>>x;
+ if(x== 1)
+  goto Question17;
+ else if (x==2)
+    goto menu;
+ else
+    return 0;
+   }
+   break;
+
+
+    case 18:
+ Question18:
+   {
+system("cls");
+cout<<"\t( 18 ) find the third smallest value \n\n";
+
+    int r[8];
+    int g,t;
+    cout<<"enter 8 numbar:\n";
+    for(int i=0 ; i<8 ;i++)
+        cin>>r[i];
+    for(int a=0;a<8;a++){
+       for( g=0;g<7;g++){
+            if(r[g]>r[g+1]){
+            int t=r[g+1];
+            r[g+1]=r[g];
+            r[g]=t;
+            }}}
+
+    cout<<endl<<"the third smallest value is : "<<r[2]<<"\t";
+
+ cout<<endl;
+ cout<<"\n\n Prece(1) To Executed Again OR Prece (2) TO back main menu OR Prece Any Key To Exit The Program "<<endl;
+ cin>>x;
+ if(x== 1)
+  goto Question18;
+ else if (x==2)
+    goto menu;
+ else
+    return 0;
+   }
+   break;
+
+
+
+
+
+       case 19:
+ Question19:
+   {
+system("cls");
+cout<<"\t( 19 ) find the greatest value and smallest value \n\n";
+
+
+    int ar[3][3];
+    int maxx , minn;
+ for(int i=0;i<3;i++){
+    for(int j=0; j<3 ;j++){
+        cin>>ar[i][j];
+    }}
+cout<<endl;
+maxx=ar[0][0];
+minn=ar[0][0];
+       for(int i=0;i<3;i++){
+        for(int j=0;j<3 ;j++){
+            if(ar[i][j]>maxx)
+                 maxx=ar[i][j];
+            if(ar[i][j]< minn)
+                 minn=ar[i][j];}}
+
+cout<<"max number on arrray is :  "<<maxx<<"\n";
+cout<<"minn number on arrray is :  "<<minn;
+
+
+ cout<<endl;
+ cout<<"\n\n Prece(1) To Executed Again OR Prece (2) TO back main menu OR Prece Any Key To Exit The Program "<<endl;
+ cin>>x;
+ if(x== 1)
+  goto Question19;
+ else if (x==2)
+    goto menu;
+ else
+    return 0;
+   }
+   break;
+
+
+       case 20:
+ Question20:
+   {
+system("cls");
+cout<<"\t( 20 ) find the main and secondary diameter \n\n";
+
+    int a[5][5];
+    for(int i=0;i<5;i++){
+    for(int j=0; j<5 ;j++){
+        cin>>a[i][j];
+    }}
+
+cout<<endl;
+       for(int i=0;i<5;i++){
+            for(int j=0;j<5 ;j++){
+                cout<<" "<<a[i][j]<<" ";
+
+            }
+            cout<<endl;
+            }
+            cout<<"main diameter \n";
+             for(int i=0;i<5;i++){
+            for(int j=0;j<5 ;j++){
+
+                if(i==j){
+            cout<<a[i][j];}
+            }
+            cout<<endl;
+            }
+            cout<<"secondary diameter \n";
+            for(int i=0;i<5;i++){
+            for(int j=0;j<5 ;j++){
+
+                if(i+j==4){
+
+            cout<<a[i][j];}}
+cout<<endl;
+            }}
+
+ cout<<endl;
+ cout<<"\n\n Prece(1) To Executed Again OR Prece (2) TO back main menu OR Prece Any Key To Exit The Program "<<endl;
+ cin>>x;
+ if(x== 1)
+  goto Question20;
+ else if (x==2)
+    goto menu;
+ else
+    return 0;
+   }
+
+
+ return 0;
+}
